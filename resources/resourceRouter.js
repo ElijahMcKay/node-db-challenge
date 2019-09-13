@@ -7,7 +7,7 @@ const router = express.Router();
 
 
 router.get('/', (req, res) => {
-    Resource.getProjects()
+    Resource.getResources()
         .then(source => {
             source.map(e => {
                 if (!e.task_complete) {
@@ -27,7 +27,7 @@ router.get('/', (req, res) => {
 
 router.post('/', (req, res) => {
     const body = req.body; 
-    Resource.addProjects(body)
+    Resource.addResources(body)
         .then(source => {
             res.status(201).json(source); 
         })
