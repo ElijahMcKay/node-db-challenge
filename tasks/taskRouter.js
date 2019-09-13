@@ -17,9 +17,8 @@ router.get('/', (req, res) => {
 })
 
 router.post('/', (req, res) => {
-    const id = req.params.id
     const body = req.body; 
-    Task.addProjects(id)
+    Task.addProjects()
         .then(task => {
             res.status(201).json(task); 
         })

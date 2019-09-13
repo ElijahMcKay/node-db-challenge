@@ -28,10 +28,9 @@ function addProjects(project) {
 
 
 // The list of tasks should include the project name and project description
-function getTasks(id) {
+function getTasks() {
     return db('tasks as t')
         .join("projects as p", "project_id", "p.id")
-        .where({project_id: id})
         .select("p.project_name", "p.project_description")
 }
 
