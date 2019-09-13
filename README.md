@@ -8,7 +8,7 @@ In this challenge, you design and build a Data Model and a RESTful API that stor
 
 **Read these instructions carefully. Understand exactly what is expected _before_ starting this Sprint Challenge.**
 
-This is an individual assessment, please work on it alone. It is an opportunity to demonstrate proficiency in the concepts and objectives introduced and practiced in preceding days.
+This is an individual assessment, please work on it alone. It is an opportunity to demonstrate proficiency in the concepts and objectives introduced and practiced in preceding days. 
 
 If the instructions are not clear, please seek support from your TL and Instructor on Slack.
 
@@ -39,13 +39,17 @@ Commit your code regularly and use descriptive messages. This helps both you (in
 Demonstrate your understanding of this week's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] Explain the difference between `Relational Databases` and `SQL`.
+      a relational database is a kind of database that follows the concepts of data normalization, and SQL is a database query language for adding and getting data from a db
 
 - [ ] Why do tables need a `primary key`?
+      primary keys are a unique numerical ID that ensure that there is a way to access that item in a table and only that item
 
 - [ ] What is the name given to a table column that references the primary key on another table.
+      foreign key 
 
 - [ ] What do we need in order to have a _many to many_ relationship between two tables.
-
+      an intermediary table
+      
 ## Minimum Viable Product
 
 Take the steps necessary to complete the project from scratch. Start by initializing your project with a `package.json` and go from there.
