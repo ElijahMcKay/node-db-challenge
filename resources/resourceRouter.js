@@ -9,6 +9,15 @@ const router = express.Router();
 router.get('/', (req, res) => {
     Resource.getProjects()
         .then(source => {
+            source.map(e => {
+                if (!e.task_complete) {
+                    return e.task_complete = false
+                } else if (e.task_complete) {
+                    return e.task_complete = true
+                } else {
+                    return e;
+                }
+            })
             res.status(200).json(source); 
         })
         .catch(err => {

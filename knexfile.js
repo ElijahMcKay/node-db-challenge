@@ -14,6 +14,7 @@ module.exports = {
     seeds: {
       directory: './data/seeds'  //you may also want to add this migrations directory 
     },
+
     pool: {
       afterCreate: (conn, done) => {
           //runs after a connection is made to the sqlite engine
